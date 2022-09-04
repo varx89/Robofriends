@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+
+h1 {
+    font-family: 'SEGA LOGO FONT';
+    font-weight: 200;
+    color: #0ccac4;
+}
+
+h3:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: wobble; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+/* Works on Firefox */
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(7, 27, 82, 1) rgb(55, 55, 54);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  .scrollbar::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+    background: rgba(7, 27, 82, 1);
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(7, 27, 82, 1);
+    border-radius: 20px;
+    border: 3px solid gray;
+  }
