@@ -12,7 +12,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
-// ReactDOM.render(<h1>Hello World</h1>, document.getElementByI('root'));
+// ReactDOM.render(document.getElementByI('root')).render(<React.StrictMode><App /></React.StrictMode>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
