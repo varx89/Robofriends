@@ -10,6 +10,7 @@ import './App.css';
 const App = () => {
     const [robots, setRobots] = useState([]);
     const [searchfield, setSearchfield] = useState('');
+    const [count, setCount] = useState(0);
 
     useEffect(() => {
         fetch('https://jsonplaceholder.cypress.io/users')
@@ -30,6 +31,7 @@ const App = () => {
         return (
             <div className='tc'>
                 <h1 className='f1'>Robofriends</h1>
+                <button onClick={() => setCount(count + 1)}>Click Me!</button>
                 <SearchBox searchChange={onSearchChange}/>
                 <Scroll>
                     <ErrorBoundry>
